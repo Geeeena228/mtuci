@@ -1,0 +1,28 @@
+При помощи 'Bot father' и БД пишем бота с расписанием.
+1.Зарегестрировали бота в телеграм(отправили Bot father-у нужные команды и ввели нужные данные).
+2.В файл main.py импортируем библиотеки для создания back-end части бота.
+3.Копируем tocken для управления ботом.
+4.Создаем объект бота, к которому мы будем обращаться.
+5.Создаем декораторы отвечающие на команды ('/week', '/mtuci', '/help')
+6.Создаем декораторы отвечающие на сообщения (понедельник, вторник, среда, четверг, пятница, расписание на текущую неделю, расписание на следующую неделю)
+7.Создаем БД 
+8.Подключаемся к ней
+9.Создаем схемы 'subject', 'timetable', 'teacher'  
+10.Создаем таблицу, заполняем её, а так же делаем связь между таблицами
+11.Модернезируем приложение (добавляем курсор для обращения к БД, создаем декоратор)
+12.При вводе неизвестной команды или неизвестного боту сообщения, бот отправляет сообщение – "Извините, я Вас не понял".
+
+
+Using 'Bot father' and the database, we write a bot with a schedule.
+1. Registered the bot in telegram (sent the necessary commands to the Bot father and entered the necessary data).
+2.To the file main.py importing libraries to create the back-end part of the bot.
+3.Copy the tocken to control the bot.
+4. Create a bot object to which we will refer.
+5.Creating decorators responding to commands ('/week', '/mtuci', '/help')
+6.Create decorators responding to messages (понедельник, вторник, среда, четверг, пятница, расписание на текущую неделю, расписание на следующую неделю)
+7. Creating a database 
+8. Connect to it
+9.Creating schemes 'subject', 'timetable', 'teacher' 
+10.We create a table, fill it in, and also make a connection between the tables
+11.Modernizing the application (adding a cursor to access the database, creating a decorator)
+12. When entering an unknown command or a message unknown to the bot, the bot sends a message – "Извините, я Вас не понял."
