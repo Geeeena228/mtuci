@@ -1,0 +1,21 @@
+Создаем оконное приложение для редактирования расписания
+1.Импортируем все необходимые библиотеки и адаптеры
+2.Создаем оконное приложение (используя классы)
+3.Добавляем 3 вкладки в каждой из которых должна содержаться информация из БД
+4.Создаем метод для подключения к БД
+5.Создаем метод для отображения вкладки с расписанием
+6.Создаем метод для отображения таблицы с расписанием на каждый день
+7.Создаем метод для обновления таблицы с расписанием на каждый день
+8.Создаем метод при помощи которого при нажатие кнопки 'join' будут вноситься изменения в БД
+9.Добавляем в каждую таблицу кнопку 'join', а так же по одной кнопке на вкаладке 'update'
+
+Creating a window application for editing the schedule
+1. Import all necessary libraries and adapters
+2.Creating a windowed application (using classes)
+3. Add 3 tabs, each of which should contain information from the database
+4.Creating a method for connecting to the database
+5.Creating a method to display the schedule tab
+6.Creating a method to display a table with a schedule for each day
+7.Creating a method for updating a table with a schedule for each day
+8.Create a method with which when you click the 'join' button, changes will be made to the database
+9.We add the 'join' button to each table, as well as one button on the 'update' tab
