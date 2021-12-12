@@ -1,13 +1,3 @@
-При помощи 'Bot father' написали первого бота. 
-1.Зарегестрировали бота в телеграм(отправили Bot father-у нужные команды  и ввели нужные данные). 
-2.В файл main.py импортируем библиотеки для создания back-end части бота.
-3.Копируем tocken для управления ботом.
-4.Создаем объект бота, к которому мы будем обращаться.
-5.Создаем декораторы отвечающие за команды (/start,/help).
-7.Создаем декоратор отвечающий на сообщение 'хочу'.
-8.Создаем декораторы отвечающие на сообщения ('МТУСИ полезные группы', 'Немного для будущего программиста').
-9.Подробно расписываем команду '/help'
-
 With the help of 'Bot father', the first bot was written. 
 1. Registered the bot in telegram (sent the necessary commands to the Bot father and entered the necessary data). 
 2.To the file main.py importing libraries to create the back-end part of the bot.
