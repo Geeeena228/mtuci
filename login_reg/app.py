@@ -3,13 +3,11 @@ from flask import Flask, render_template, request, redirect
 import psycopg2
 
 app = Flask(__name__)
-conn = psycopg2.connect(database="service", user="postgres", password="qweasd", host="localhost", port="5432")
+conn = psycopg2.connect(database="login_reg", user="postgres", password="qweasd", host="localhost", port="5432")
 cursor = conn.cursor()
 
 
-#@app.route('/')
-#def redicte():
-#redirect('/login', 301, response=None)
+
 
 
 @app.route('/login/', methods=['POST', 'GET'])
@@ -21,7 +19,6 @@ def login():
             if username and password:
                 cursor.execute("SELECT * FROM service.users WHERE login=%s AND password=%s", (str(username), str(password)))
                 records = list(cursor.fetchall())
-                print(records)
                 if records:
                     return render_template('account.html', full_name=records[0][1])
                 else:
@@ -32,6 +29,7 @@ def login():
             return redirect("/registration/")
 
     return render_template('login.html')
+
 
 @app.route('/registration/', methods=['POST', 'GET'])
 def registration():
@@ -48,3 +46,4 @@ def registration():
         else:
             return '<p> Недостаточно данных <p>'
     return render_template('registration.html')
+app.run()
